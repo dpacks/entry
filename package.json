@@ -1,0 +1,23 @@
+{
+  "name": "@dpack/entry",
+  "version": "0.1.1",
+  "description": "dPack Console Entry Library That Is BuffGap-Ready. Works Directly With @dpack/logger",
+  "contributors": [
+    "Jared Rice Sr. <jared@dwebs.io>",
+    "Distributed Webs Project, LLC. <labs@distributedwebs.org>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "keypress": "^0.2.1"
+  },
+  "devDependencies": {
+    "@dwcore/buffgap": "dwcore/buffgap#master"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
