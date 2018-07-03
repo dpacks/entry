@@ -1,6 +1,6 @@
 {
   "name": "@dpack/entry",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "dPack Console Entry Library That Is BuffGap-Ready. Works Directly With @dpack/logger",
   "contributors": [
     "Jared Rice Sr. <jared@dwebs.io>",
