@@ -1,4 +1,4 @@
-var dpackEntry = require('./')({dpackStyle: style})
+var dPackEntry = require('./')({dpackStyle: style})
 var buffgap = require('@dwcore/buffgap')()
 
 var names = []
@@ -6,11 +6,11 @@ var seconds = 0
 
 buffgap.pipe(process.stdout)
 
-dpackEntry.on('end', function () {
+dPackEntry.on('end', function () {
   process.exit()
 })
 
-dpackEntry.on('enter', function (consoleLine) {
+dPackEntry.on('enter', function (consoleLine) {
   names.push(consoleLine)
 })
 
@@ -19,7 +19,7 @@ setInterval(function () {
   update()
 }, 1000)
 
-dpackEntry.on('update', update)
+dPackEntry.on('update', update)
 update()
 
 function style (start, cursor, end) {
@@ -31,8 +31,8 @@ function update () {
   buffgap.write(`
     Welcome to a name prompt. It has been ${seconds} second(s) since you started.
 
-    Please enter your name: ${dpackEntry.consoleLine()}
-    Cursor position is ${dpackEntry.cursor}
+    Please enter your name: ${dPackEntry.consoleLine()}
+    Cursor position is ${dPackEntry.cursor}
 
     Previously entered names: ${names.join(', ')}
   `)

@@ -1,9 +1,9 @@
 var events = require('events')
 var keypress = require('keypress')
 
-module.exports = dpackEntry
+module.exports = dPackEntry
 
-function dpackEntry (opts) {
+function dPackEntry (opts) {
   if (!opts) opts = {}
 
   var dpackStyle = opts.style
